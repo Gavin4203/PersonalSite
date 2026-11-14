@@ -365,3 +365,8 @@ FodyWeavers.xsd
 # Env files
 .env
 .env.*
+
+# idea
+.idea
+.idea/*
+*/.idea/*
