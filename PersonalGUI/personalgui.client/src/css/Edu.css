@@ -1,0 +1,115 @@
+:root {
+    --gold: #795937;
+    --goldv2: #D1B394;
+    --black: #1a1a1d;
+}
+
+.edu-card {
+    background: var(--black);
+    border: 2px solid var(--gold);
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(12,20,40,0.12);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    min-width: 500px;
+    min-height: 160px;
+    max-width: 800px;
+    max-height: 400px;
+    position: relative;
+}
+
+.spacer-inbetween-schools {
+    width: 1px;
+    height: 25px;
+}
+
+.edu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-col {
+    color: #f8f8f8;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.edu-school {
+    margin: 2px 0 6px 0;
+    font-size: 1.6rem;
+    line-height: 1.05;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+}
+
+.edu-date {
+    color: var(--goldv2);
+}
+
+.edu-major {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+    color: var(--goldv2);
+    font-weight: 600;
+}
+
+.edu-desc {
+    margin: 0 0 10px 0;
+    color: #e8e8e8;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.h2-title-extra {
+    text-align: left;
+    font-size: 2.5em;
+    border-bottom: 2px solid var(--gold);
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 590px) {
+    .edu-card {
+        min-width: auto;
+        max-width: auto;
+        min-height: 160px;
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 430px) {
+    .edu-header {
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    .edu-card {
+        max-height: 1200px;
+    }
+}
+
+@media (max-width: 393px) {
+    .edu-card {
+        min-width: auto;
+        max-width: 320px;
+        min-height: 160px;
+        max-height: 1000px;
+    }
+
+    .h2-title-extra {
+        font-size: 2.0em;
+    }
+}
+
+@media (max-width: 320px) {
+    
+}

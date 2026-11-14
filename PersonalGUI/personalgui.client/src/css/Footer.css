@@ -1,0 +1,167 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.madeby {
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-wrap {
+    flex: 1 0 auto;
+    min-width: 0;
+    margin-right: 10%;
+}
+
+.info-title {
+    margin: 0;
+    font-size: 1.02rem;
+    color: white;
+    line-height: 1.05;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-sub {
+    margin-top: 5%;
+    font-size: 0.78rem;
+    color: white;
+}
+
+.div-spacer {
+    width: 20px;
+    height: 1px;
+}
+
+.info-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact a {
+    margin: 0px 0px 0px 0px;
+}
+
+img {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.contact-icon:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+@media (max-width: 1024px) {
+    .ttlinkedin {
+        left: -250%;
+    }
+
+    .ttlinkedin::after {
+        left: 83.8%;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    .ttlinkedin {
+        left: -340%;
+    }
+
+    .ttgithub {
+        left: -50%;
+    }
+
+    .ttlinkedin::after {
+        left: 94%;
+    }
+
+    .ttgithub::after {
+        left: 69.9%;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 430px) {
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 6%;
+        margin-bottom: 5%;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+    
+    .ttlinkedin {
+        left: -190%;
+    }
+
+    .ttlinkedin::after {
+        left: 77%;
+    }
+}
+
+@media (max-width: 429px) {
+    #footer {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 393px) {
+    #footer {
+        margin-top: 5%;
+    }
+}

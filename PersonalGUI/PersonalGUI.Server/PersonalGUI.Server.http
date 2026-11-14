@@ -1,0 +1,6 @@
+@PersonalGUI.Server_HostAddress = http://localhost:5247
+
+##GET {{PersonalGUI.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

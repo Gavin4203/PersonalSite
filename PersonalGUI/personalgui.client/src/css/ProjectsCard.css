@@ -1,0 +1,121 @@
+:root {
+    --gold: #795937;
+    --goldv2: #D1B394;
+    --black: #1a1a1d;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    place-items: center;
+}
+
+.project-card {
+    background: var(--black);
+    border: 2px solid var(--gold);
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(12,20,40,0.12);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 280px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.card-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.card-title-wrap {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.1;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-sub-date {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+    color: var(--goldv2);
+}
+
+.project-desc {
+    display: block;
+    text-align: left;
+}
+
+.tech-list {
+    display: block;
+    height: 40px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+@media (max-width: 1020px) {
+    
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        margin-bottom: 30px;
+    }
+    
+    .h2-title-proj {
+        margin-left: 3%;
+    }
+
+    .project-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 520px) {
+    .project-card {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+    .project-card {
+        width: 235px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .project-card {
+        width: 235px;
+        height: 365px;
+    }
+}
